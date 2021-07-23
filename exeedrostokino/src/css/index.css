@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Tactic Sans";
+    src: url("../../static/fonts/tactic/TacticSans-Thn.woff2") format('woff2'), url("../../static/fonts/tactic/TacticSans-Thn.otf") format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Tactic Sans";
+    src: url("../../static/fonts/tactic/TacticSans-Reg.woff2") format('woff2'), url("../../static/fonts/tactic/TacticSans-Reg.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Tactic Sans";
+    src: url("../../static/fonts/tactic/TacticSans-Med.woff2") format('woff2'), url("../../static/fonts/tactic/TacticSans-Med.otf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Tactic Sans";
+    src: url("../../static/fonts/tactic/TacticSans-MedIt.woff2") format('woff2'), url("../../static/fonts/tactic/TacticSans-MedIt.otf") format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Tactic Sans";
+    src: url("../../static/fonts/tactic/TacticSans-Bld.woff2") format('woff2'), url("../../static/fonts/tactic/TacticSans-Bld.otf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Tactic Sans Exd";
+    src: url("../../static/fonts/tactic/TacticSansExd-Bld.woff2") format('woff2'), url("../../static/fonts/tactic/TacticSansExd-Bld.otf") format('truetype');
+    font-weight: bold;color: #b91b23;
+    font-style: normal;
+}
+body{
+    font-family: 'Tactic Sans',Open Sans,sans-serif;
+    background: url("/images/background.jpg");
+    background-position: 50%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#map{
+    height: 400px;
+}
+.skew-button{
+    transform: skew(-20deg);
+    margin: 2px;
+}
+.skew-button span{
+    display: inline-block;
+    transform: skew(20deg);
+}
+.ReactModal__Overlay{
+    @apply flex items-center;
+}
+ul{
+    @apply list-disc list-inside;
+}
